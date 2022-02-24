@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* 자식 선택자는
+        부모태그 > 자식태그 방식으로 입력하고
+        두 개 이상의 계층도 지정 가능합니다.
+        단, > 선택자의 경우는
+        맞닿아 있는 관계가 아니라면
+        설령 특정 태그의 하위에 지목된 태그가 있어도
+        적용되지 않습니다 */
+        p {
+            color:blue; /* 이렇게 하면 확정 목록이 아닌 미정인것도 나오기 때문에 불편하다. */
+        }
+        
+        li > p {
+            color:green; /* li에 자식인 p만 녹색으로 만들겠다 라는 뜻입니다. */
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><!-- 감싸고 있어서 부모-->
+    <h1>확정 여행지 목록</h1><!-- 감싸 지고 있어서 자식 태그-->
+    <ul>
+        <li><p>2월 : 부산</p></li>
+        <li><p>3월 : 제주</p></li>
+    </ul>
+    <p>4월 울릉도는 미정입니다.</p>
+</body>
+</html>
