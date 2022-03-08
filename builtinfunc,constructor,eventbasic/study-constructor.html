@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+    </style>
+    <script>
+        
+        function person(name, age, country){
+            this.name = name;
+            this.age = age;
+            this.country = country;
+
+            this.perInfo = function(){
+                document.write("어서오세요 <br/>");
+                document.write("히망의 블로그입니다. <br/>");      
+            }
+        }
+        var HeeMang = new person("HeeMang", 27, "Korea");
+        document.write(HeeMang.name + "<br/>");
+        document.write(HeeMang.age + "<br/>");
+        document.write(HeeMang.country + "<br/>");
+        HeeMang.perInfo();
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
