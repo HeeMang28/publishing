@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+    </style>
+    <script>
+        window.onload = function(){
+            var title = document.getElementById("title");
+            console.log(title);
+            var myList = document.getElementsByTagName("ul");
+            console.log(myList);
+            var myLi = myList[0].getElementsByTagName("li");
+            console.log(myLi);
+
+            console.log(myList[1].childNodes);
+            console.log(myList[1].children);
+            console.log(myList[1].firstChild)
+            var childLi = myList[1].children[0];
+            console.log(childLi);
+            console.log(childLi.parentNode);
+            console.log(childLi.nextSibling);
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>선택자</h1>
+        <h2 id="title">원거리 선택자</h2>
+        <ul>
+            <li>getElementById</li>
+            <li>getElementByTagName</li>
+        </ul>
+        <h2>근거리 선택자</h2>
+        <ul id="list">
+            <li>parentNode</li>
+            <li>childNodes</li>
+            <li>childern</li>
+            <li>firstChild</li>
+            <li>previousSibling</li>
+            <li>nextSibling</li>
+        </ul>
+    </div>
+</body>
+</body>
+</html>
