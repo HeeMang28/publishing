@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+    </style>
+    <script>
+        window.onload = function(){
+            var increase = document.getElementById("increase");
+            var reset = document.getElementById("reset");
+            var decrease = document.getElementById("decrease");
+            increase.onclick = function(){
+                var currentNum = parseInt(number.innerText, 10);
+                number.innerText = currentNum + 1;
+            }
+            reset.onclick = function(){
+                number.innerText = 0;
+            }
+            decrease.onclick = function(){
+                var currentNum = parseInt(number.innerText, 10);
+                number.innerText = currentNum - 1;
+            }
+            var red = document.getElementById("red");
+            red.onclick = function(){
+                number.style.color = "red";
+            }
+            var blue = document.getElementById("blue");
+            blue.onclick = function(){
+                number.style.color = "blue";
+            }
+            var black = document.getElementById("black");
+            black.onclick = function(){
+                number.style.color = "black";
+            }
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h2 id="number">0</h2>
+    <div>
+        <button id="increase">+1</button>
+        <button id="reset">0</button>
+        <button id="decrease">-1</button>
+        <br/>
+        <button id="red">빨간색</button>
+        <button id="blue">파란색</button>
+        <button id="black">검은색</button>
+    </div>
+</body>
+</html>
