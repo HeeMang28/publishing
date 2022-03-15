@@ -67,10 +67,43 @@
             // hint) .parent().next().sli...
 
             $("#btn4").click(function(){
-                $("#btn4").parent().next().slideUp();
+                $("#btn4").parent().next().slideUp("slow");
+            });
+            $("#btn5").click(function(){
+                $("#btn5").parent().next().slideDown("slow");
+            });
+            $("#btn6").click(function(){
+                $("#btn6").parent().next().slideToggle("slow");
+            });
+            // #btn7을 누르면 클릭한 요소의 부모의 다음 형제에 대해서
+            // fadeOut을 걸어주세요.
+            $("#btn7").click(function(){
+                $("#btn7").parent().next().fadeOut("slow");
+            });
+            // #btn8을 누르면 클릭한 요소의 부모의 다음 형제에 대해서
+            // fadeIn을 걸어주세요.
+            $("#btn8").click(function(){
+                $("#btn8").parent().next().fadeIn("slow");
+            });
+            // #btn9을 누르면 클릭한 요소의 부모의 다음 형제에 대해서
+            // fadeToggle을 걸어주세요.
+            $("#btn9").click(function(){
+                $("#btn9").parent().next().fadeToggle("slow");
+            });
+            
+            // fadetO(속도, 투명도);
+            // 속도는 fast, slow, normal 아니면 밀리초(1000분의 1초)
+            // 투명도 => 0.3 (70% 투명), 1(0%투명)
+            // #btn10에 대해서 0.3 투명도를
+            // #btn11에 대해서 1 투명도를 줘서 작성해주세요.
+            $("#btn10").click(function(){
+                $("#btn10").parent().next().fadeTo("slow", "0.3");
+            });
+            $("#btn11").click(function(){
+                $("#btn11").parent().next().fadeTo("normal", "1");
             });
 
-        })
+        });
     </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

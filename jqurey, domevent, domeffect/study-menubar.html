@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        #menu {
+            background-color:bisque;
+            width:200px;
+            padding:10px;
+        }
+        .list {
+            display:none;
+        }
+    </style>
+        <script>
+            $(function(){
+
+                $("#menu").hover(function(){
+                    $(".list").css("display", "block");
+                }, function(){
+                    $(".list").css("display", "none");
+                });
+            })
+        </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="menu">
+        <h3>교촌 전체 메뉴</h3>
+        <ul class="list">
+            <li>교촌오리지날</li>
+            <li>교촌레드오리지날</li>
+            <li>교촌리얼후라이드</li>
+            <li>교촌치즈트러플순살</li>
+            <li>교촌반반순살</li>
+            <li>교촌레드순살</li>
+            <li>교촌허니순살</li>
+            <li>교촌시그니처순살세트</li>
+            <li>교촌순살치킨</li>
+            <li>교촌소이살살</li>
+        </ul>
+    </div>
+</body>
+</html>
