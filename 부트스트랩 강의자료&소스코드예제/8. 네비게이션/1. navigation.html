@@ -7,7 +7,7 @@
 <title>부트스트랩</title>
 
 <!-- Bootstrap -->
-<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <link href="../css/kfonts2.css" rel="stylesheet">
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,11 +20,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>-->
 
 <!-- bootstrap.js -->
-<script src="../js/bootstrap.min.js"></script>
-
+<!--<script src="../js/bootstrap.min.js"></script>-->
+<!-- 통합번들-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="container">
@@ -41,7 +42,7 @@
   <h4>탭형 네비게이션  class="active" 추가할 경우 </h4>
      <ul class="nav nav-tabs">
          <li class="nav-item"><a class="nav-link" href="#">메뉴1</a></li>
-         <li class="nav-item"><a class="nav-link active" href="#">메뉴2</a></li>
+         <li class="nav-item"><a class="nav-link active" href="#">메뉴2</a></li> <!-- active 넣으면 강조-->
          <li class="nav-item"><a class="nav-link" href="#">메뉴3</a></li>
          <li class="nav-item"><a class="nav-link" href="#">메뉴4</a></li>
      </ul>
@@ -170,13 +171,13 @@
 <h4>Toggleable / Dynamic Pills</h4>
   <ul class="nav nav-pills" role="tablist">
     <li class="nav-item">
-      <a class="nav-link active" data-toggle="pill" href="#home_p">home</a>
+      <a class="nav-link active" data-bs-toggle="pill" href="#home_p">home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" data-toggle="pill" href="#menu1_p">Menu 1</a>
+      <a class="nav-link" data-bs-toggle="pill" href="#menu1_p">Menu 1</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" data-toggle="pill" href="#menu2_p">Menu 2</a>
+      <a class="nav-link" data-bs-toggle="pill" href="#menu2_p">Menu 2</a>
     </li>
   </ul>
 
@@ -196,6 +197,44 @@
     </div>
   </div>
   <br><br><br><br><br><br>
-</div>
+  <h1>여러분들이 dynamic bar를 임의로 생성해주세요. 버튼은 최소 3개입니다.</h1>
+  <ul class="nav nav-pills" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="pill" href="#item1_p">1단</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="pill" href="#item2_p">2단<a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="pill" href="#item3_p">3단</a>
+    </li>
+    </ul>
+    <div class="tab-content">
+      <div id="item1_p" class="container tab-pane active"><br>
+          <p>1 * 1 = 1 </p>
+          <p>1 * 2 = 2 </p>
+          <p>1 * 3 = 3 </p>
+          <p>1 * 4 = 4 </p>
+          <p>1 * 5 = 5 </p>
+          <p>1 * 6 = 6 </p>
+      </div>
+      <div id="item2_p" class="container tab-pane fade"><br>
+        <p>2 * 1 = 2</p>
+        <p>2 * 2 = 4</p>
+        <p>2 * 3 = 6</p>
+        <p>2 * 4 = 8</p>
+        <p>2 * 5 = 10</p>
+        <p>2 * 6 = 12</p>
+      </div>
+      <div id="item3_p" class="container tab-pane fade"><br>
+      <p>3 * 1 = 3</p>
+      <p>3 * 2 = 6</p>
+      <p>3 * 3 = 9</p>
+      <p>3 * 4 = 12</p>
+      <p>3 * 5 = 15</p>
+      <p>3 * 6 = 18</p>
+      </div>
+    </div>
+</div><!-- container-->
 </body>
 </html>
